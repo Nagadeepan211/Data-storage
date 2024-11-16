@@ -1,14 +1,14 @@
 body { 
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #eaeaea;
-    color: #444;
+    background-color: #f8f9fa; /* Light grey background for a clean look */
+    color: #343a40; /* Dark grey text for better readability */
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(45deg, #0077cc, #005fa3);
+    background: linear-gradient(45deg, #ff5722, #e64a19); /* Vibrant orange gradient */
     color: white;
     padding: 15px 20px;
     text-align: center;
@@ -39,14 +39,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #ffcc80; /* Soft orange hover effect */
 }
 
 main {
     padding: 30px;
     max-width: 900px;
     margin: auto;
-    background: white;
+    background: #ffffff; /* Pure white for content readability */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -57,7 +57,7 @@ section {
 
 section h2 {
     font-size: 1.8em;
-    color: #0077cc;
+    color: #ff5722; /* Matching vibrant header color */
     margin-bottom: 10px;
 }
 
@@ -78,7 +78,7 @@ ul li {
 }
 
 footer {
-    background-color: #222;
+    background-color: #212529; /* Dark grey for footer contrast */
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -91,11 +91,11 @@ footer p {
 }
 
 a {
-    color: #0077cc;
+    color: #ff5722; /* Vibrant orange links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #005fa3;
+    color: #e64a19; /* Slightly darker orange for hover effect */
 }
