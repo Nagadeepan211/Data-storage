@@ -21,20 +21,18 @@
 
     <main>
         <section id="about">
-            <h2>Welcome to Naveenkumar's Cloud storage Website</h2>
-            <h2>About Our Service</h2>
+            <h2>Welcome to Naveenkumar's Cloud Storage Website</h2>
+            <h3>About Our Service</h3>
             <p>Naveenkumar Cloud Storage provides secure and scalable storage solutions, powered by cutting-edge cloud technology.</p>
         </section>
 
         <section id="features">
             <h2>Key Features</h2>
             <ul>
-                <li>1. Auto-Scaling Storage <li>
-                <li>2. High Availability and Resilience <li>
-                <li>3. Built-in Compliance and Security Monitoring <li>
-                *<li>High availability and resilience</li>*
-                *<li>Auto-scaling storage for growing data needs</li>*
-               * <li>Easy access and management</li>*
+                <li>Auto-Scaling Storage</li>
+                <li>High Availability and Resilience</li>
+                <li>Built-in Compliance and Security Monitoring</li>
+                <li>Easy Access and Management</li>
             </ul>
         </section>
 
