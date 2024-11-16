@@ -1,112 +1,89 @@
-/* Global Styles */
+/* Body styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Default text color */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header section */
 header {
-    background: linear-gradient(135deg, #ff6f61, #ff9a8b); /* Vibrant gradient */
-    color: white;
-    padding: 20px;
+    background-color: #ff6f00; /* Vibrant orange background */
+    color: white; /* White text */
     text-align: center;
-    border-bottom: 5px solid #ff3d2e; /* Bold border for contrast */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo inside header */
+header img {
+    height: 60px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+/* Main heading (title) */
 header h1 {
-    font-size: 2.8em;
-    margin: 0;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 10px 0;
 }
 
+/* Paragraphs inside header */
 header p {
     font-size: 1.2em;
-    margin: 10px 0 0;
-    font-weight: 500;
+    margin: 5px 0;
 }
 
-/* Main Content Styling */
+/* Main content area */
 main {
     max-width: 900px;
     margin: 20px auto;
-    padding: 25px;
+    padding: 20px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styles */
-section {
-    margin-bottom: 20px;
+/* Section headings */
+h2, h3 {
+    color: #ff6f00; /* Vibrant orange color */
 }
 
-h2 {
-    color: #ff6f61; /* Vibrant red-orange */
-    font-size: 2em;
-    margin-bottom: 15px;
+/* Unordered list items */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-h3 {
-    color: #f25f5c; /* Slightly darker red-orange */
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-ul, ol {
-    padding-left: 20px;
-    font-size: 1.1em;
-    line-height: 1.8;
-}
-
+/* List item styling */
 li {
     margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #ff6f61;
-    color: white;
-    margin-top: 20px;
-}
-
-footer p {
-    font-size: 1em;
-    margin: 0;
-}
-
-/* Links Styling */
+/* Anchor links */
 a {
-    color: #ff3d2e; /* Bold red for links */
+    color: #ff6f00; /* Orange color for links */
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
     text-decoration: underline;
-    background-color: #ff3d2e; /* Hover effect for links */
-    padding: 5px;
-    border-radius: 5px;
+    color: #d45700; /* Darker orange when hovered */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-    main {
-        padding: 15px;
-    }
-    h2 {
-        font-size: 1.6em;
-    }
-    h3 {
-        font-size: 1.2em;
-    }
+/* Footer section */
+footer {
+    background-color: #ff6f00; /* Vibrant orange footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Footer paragraph styling */
+footer p {
+    font-size: 1em;
+    margin: 0;
 }
