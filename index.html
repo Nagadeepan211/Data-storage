@@ -5,7 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Revamping Data Storage for Modern Needs</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9; /* Light background */
+            color: #333; /* Default text color */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header section */
+        header {
+            background-color: #ff6f00; /* Vibrant orange background */
+            color: white; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo inside header */
+        header .logo-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        header .logo {
+            height: 60px; /* Adjust logo size */
+            width: auto;
+        }
+
+        /* Main heading (title) */
+        header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        /* Paragraphs inside header */
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        /* Main content area */
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section headings */
+        h2, h3 {
+            color: #ff6f00; /* Vibrant orange color */
+        }
+
+        /* Unordered list items */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* List item styling */
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Anchor links */
+        a {
+            color: #ff6f00; /* Orange color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #d45700; /* Darker orange when hovered */
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #ff6f00; /* Vibrant orange footer */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Logo inside footer */
+        footer .logo-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        footer .logo {
+            height: 50px; /* Adjust footer logo size */
+            width: auto;
+        }
+
+        /* Footer paragraph styling */
+        footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,10 +137,58 @@
                 <li>Challenges in maintaining regulatory compliance</li>
             </ul>
             <p>These challenges hinder operational efficiency and affect the company's ability to adapt to data-driven business demands.</p>
+            <h3>Business Goals</h3>
+            <p>To overcome these challenges, the company seeks a scalable, secure, and efficient data storage solution on Oracle Cloud Infrastructure (OCI). Goals include:</p>
+            <ul>
+                <li>Enhancing data accessibility</li>
+                <li>Ensuring compliance</li>
+                <li>Improving security</li>
+                <li>Streamlining integration and migration processes</li>
+            </ul>
+            <h3>Objectives</h3>
+            <ul>
+                <li>Improve data retrieval and accessibility.</li>
+                <li>Increase scalability to support data growth.</li>
+                <li>Strengthen data security and regulatory compliance.</li>
+                <li>Facilitate smooth integration and migration to OCI.</li>
+            </ul>
         </section>
         
-        <!-- Add more sections as necessary -->
+        <section id="solution">
+            <h2>2. Proposed Solution</h2>
+            <h3>2.1 Solution Overview</h3>
+            <p>The proposed solution leverages Oracle Cloud Infrastructure (OCI) storage options, including Object Storage, Block Storage, and File Storage, to modernize data architecture. This setup enhances accessibility, security, and scalability to handle increased data volumes efficiently.</p>
+            <h3>2.2 Step-by-Step Approach</h3>
+            <ol>
+                <li><strong>Assess Current Architecture:</strong> Conduct a comprehensive evaluation to identify storage gaps and map needs to OCI storage types.</li>
+                <li><strong>Develop a Migration Plan:</strong> Design a phased migration approach to move data to OCI without disrupting operations.</li>
+                <li><strong>Implement Security and Compliance Controls:</strong> Set up OCI’s data encryption, access control, and compliance monitoring tools to protect sensitive data and meet standards like GDPR and HIPAA.</li>
+                <li><strong>Configure Backup and Disaster Recovery:</strong> Establish automatic backups and disaster recovery solutions within OCI to ensure data resilience.</li>
+            </ol>
+            <h3>2.3 Data and Input Sources</h3>
+            <p>The data includes transactional records, customer data, logs, and analytics information. This data will be categorized and stored within OCI for optimized retrieval and secure access. Encryption and access control measures will secure all stored data.</p>
+        </section>
         
+        <section id="features">
+            <h2>3. Key Features of the Solution</h2>
+            <ul>
+                <li><strong>Auto-Scaling Storage:</strong> Adapts to changing data demands automatically, reducing manual intervention and cost.</li>
+                <li><strong>High Availability and Resilience:</strong> Multi-region replication ensures data availability and redundancy for maximum uptime.</li>
+                <li><strong>Built-in Compliance and Security Monitoring:</strong> OCI’s integrated security framework ensures continuous compliance and data protection.</li>
+            </ul>
+        </section>
+
+        <section id="outcomes">
+            <h2>4. Expected Outcomes and Benefits</h2>
+            <h3>4.1 Business Benefits</h3>
+            <ul>
+                <li>Reduced Costs through optimized cloud storage and elimination of on-premise infrastructure.</li>
+                <li>Improved Data Accessibility for faster data retrieval and support for business intelligence needs.</li>
+                <li>Enhanced Agility in decision-making due to quick access to reliable data.</li>
+            </ul>
+            <h3>4.2 Risk Management</h3>
+            <p>To mitigate risks such as data breaches, migration issues, and downtime, the solution employs phased migration, data encryption, and controlled access protocols.</p>
+        </section>
     </main>
 
     <footer>
