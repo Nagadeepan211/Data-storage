@@ -9,59 +9,50 @@
         /* Body styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #ffab00; /* More vibrant background */
-            color: #333; /* Default text color */
+            background-color: #ffab00;
+            color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
 
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         /* Header section */
         header {
-            background-color: #ff6f00; /* Vibrant orange background */
-            color: white; /* White text */
+            background-color: #ff6f00;
+            color: white;
             padding: 20px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
-        /* Left logo in header */
-        header .logo-left {
-            position: absolute;
-            left: 20px;
-            top: 20px;
+        /* Bouncing logo animation */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
-        /* Right logo in header */
-        header .logo-right {
-            position: absolute;
-            right: 20px;
-            top: 20px;
+        header .logo-left, header .logo-right {
+            animation: bounce 2s ease-in-out infinite;
         }
 
-        /* Logo inside header */
-        header .logo {
-            height: 60px; /* Adjust logo size */
-            width: auto;
-        }
-
-        /* Main heading (title) */
-        header h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-
-        /* Paragraphs inside header */
-        header p {
-            font-size: 1.2em;
-            margin: 5px 0;
-            text-align: center;
-        }
-
-        /* Navigation Bar (Tabs) */
+        /* Navigation Bar */
         nav {
-            background-color: #ff6f00; /* Orange background for nav */
+            background-color: #ff6f00;
             text-align: center;
             padding: 10px;
         }
@@ -73,10 +64,12 @@
             font-size: 1.1em;
             margin: 0 15px;
             border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #d45700; /* Darker orange on hover */
+            background-color: #d45700;
+            transform: scale(1.1);
         }
 
         /* Main content area */
@@ -89,52 +82,35 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Section headings */
+        /* Section headings animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         h2, h3 {
-            color: #ff6f00; /* Vibrant orange color */
+            color: #ff6f00;
+            animation: slideIn 1s ease-out;
         }
 
-        /* Unordered list items */
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+        /* Scroll effects */
+        html {
+            scroll-behavior: smooth;
         }
 
-        /* List item styling */
-        li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
+        main section {
+            animation: fadeIn 1s ease-in-out;
+            opacity: 0;
         }
 
-        /* Anchor links */
-        a {
-            color: white; /* White text */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #d45700; /* Darker orange when hovered */
-        }
-
-        /* Footer section */
-        footer {
-            background-color: #ff6f00; /* Vibrant orange footer */
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        /* Footer logo */
-        footer .logo {
-            height: 50px;
-            width: auto;
-        }
-
-        footer p {
-            font-size: 1em;
-            margin: 0;
+        main section.visible {
+            opacity: 1;
         }
     </style>
 </head>
@@ -153,7 +129,7 @@
         <p>Email: <a href="mailto:naveenkumartrp22@gmail.com">naveenkumartrp22@gmail.com</a></p>
     </header>
     
-    <!-- Navigation bar (Tabs) -->
+    <!-- Navigation bar -->
     <nav>
         <a href="#overview">Overview</a>
         <a href="#solution">Solution</a>
@@ -173,43 +149,15 @@
                 <li>Security vulnerabilities</li>
                 <li>Challenges in maintaining regulatory compliance</li>
             </ul>
-            <p>These challenges hinder operational efficiency and affect the company's ability to adapt to data-driven business demands.</p>
         </section>
         
         <section id="solution">
             <h2>2. Proposed Solution</h2>
-            <h3>2.1 Solution Overview</h3>
-            <p>The proposed solution leverages Oracle Cloud Infrastructure (OCI) storage options, including Object Storage, Block Storage, and File Storage, to modernize data architecture. This setup enhances accessibility, security, and scalability to handle increased data volumes efficiently.</p>
-        </section>
-        
-        <section id="features">
-            <h2>3. Key Features of the Solution</h2>
-            <ul>
-                <li><strong>Auto-Scaling Storage:</strong> Adapts to changing data demands automatically, reducing manual intervention and cost.</li>
-                <li><strong>High Availability and Resilience:</strong> Multi-region replication ensures data availability and redundancy for maximum uptime.</li>
-                <li><strong>Built-in Compliance and Security Monitoring:</strong> OCI’s integrated security framework ensures continuous compliance and data protection.</li>
-            </ul>
+            <h3>Solution Overview</h3>
+            <p>The proposed solution leverages Oracle Cloud Infrastructure (OCI) storage options...</p>
         </section>
 
-        <section id="outcomes">
-            <h2>4. Expected Outcomes and Benefits</h2>
-            <h3>4.1 Business Benefits</h3>
-            <ul>
-                <li>Reduced Costs through optimized cloud storage and elimination of on-premise infrastructure.</li>
-                <li>Improved Data Accessibility for faster data retrieval and support for business intelligence needs.</li>
-                <li>Enhanced Agility in decision-making due to quick access to reliable data.</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>5. Contact Information</h2>
-            <p>If you have any questions or need further information, feel free to reach out to us:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:naveenkumartrp22@gmail.com">naveenkumartrp22@gmail.com</a></li>
-                <li><strong>Phone:</strong> 814722114039</li>
-                <li><strong>Office Address:</strong> B.E. Mechanical Engineering College, SRM TRP Engineering College</li>
-            </ul>
-        </section>
+        <!-- More sections -->
     </main>
 
     <footer>
@@ -218,5 +166,17 @@
         </div>
         <p>&copy; 2024 Revamping Data Storage. All rights reserved.</p>
     </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
